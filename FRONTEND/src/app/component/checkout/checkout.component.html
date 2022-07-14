@@ -1,0 +1,41 @@
+<div class="container-fluid">
+    <div class="row justify-content-start">
+        <ng-container *ngFor="let cart of carts" >
+            <div class="card col-sm-4 ml-4 mt-5">
+                <div class="profile">
+                    <img src="/assets/images/person.png" alt="profileholder" style="height: 10em; width: 10em;">
+                </div>
+                <h4>Your Username: {{cart.username}}</h4>
+               <h4>Name: {{cart.contractorFirstName}} {{cart.contractorLastName}}</h4> 
+               <!--<h4>Location: {{cart}} </h4>-->
+               <!--<h6>About Me: {{user.aboutMe}}</h6>-->
+            </div>
+            <div class="card col-sm-1 mt-5 ml-5">
+                <div class="service">
+                    <img src="/assets/images/dog.png" alt="profileholder" style="height: 7em; width: 7em;">
+                </div>
+            </div>
+            <div class="card col-sm-1 mt-5 mr-5">
+               <h6>Service: {{cart.service}}</h6> 
+               <!--<h6>Service Description: {{user.description}}</h6>-->
+               <h6>Price: {{cart.price}} </h6>
+            </div>
+           <!--<div class="card col-sm-2"></div>
+            <div class="card col-sm-2 mt-5 p-5 ml-5 text-right">
+              <button type="button" class="btn btn-lg text-nowrap" data-toggle="modal" data-target="#exampleModalCenter" style="background:#652CB3; color: white;">Book Service</button>
+            </div>-->
+            <div class="modal " id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg" role="document" >
+                  <div class="modal-content text-center" style="background-color:#652CB3;">
+                    <div class="modal-header"  style="border-style:none;">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </ng-container>
+    </div>
+
+</div>

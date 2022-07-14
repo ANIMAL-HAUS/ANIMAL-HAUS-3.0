@@ -1,0 +1,21 @@
+<div class="card col-md-3">
+    <h3> SIGN IN</h3>
+    <BR>
+    <form>
+        <label for = "username"><span style="color:red">*</span> Username </label>
+        <input type = "text" id="username" placeholder="username" formController= "username" [(ngModel)] = "userName" name = "username"> 
+        <br>
+        <br>
+        <label for = "password"><span style="color:red">*</span> Password </label>
+        <input type = "password" id="password"  placeholder="password" formController= "password" [(ngModel)] = "password" name = "password"> 
+        <label for = "incorrect password" id="wrong" style="color: red"><span style="color:red">*</span> </label>
+        <br>
+        <br>
+        <button type = "submit" class ="btn" (click) = onSubmit()>
+            Sign In
+        </button><br>
+        <small class="text-danger">{{msgError}}</small>
+    </form>
+
+    <p>Dont have an account? Sign up <a routerLink="/component/register">here</a>.</p>
+</div>

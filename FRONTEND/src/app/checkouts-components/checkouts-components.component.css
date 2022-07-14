@@ -1,0 +1,79 @@
+.card {
+    border-style: none;
+    background: transparent;
+    text-align:center;
+    width: 100%;
+    align-items: center;
+justify-content: center;
+  }
+
+.btn {
+        border: black;
+        background: #652cb3;
+        border-color: white;
+        border-style: solid;
+        margin-right: 5px;
+        color: white;
+        width: 10%;
+        text-align:center;
+        border-radius: 12px;
+       }
+
+.bttn{
+
+  background-image: url( '/assets/images/trash-can.png' );
+  border: none;
+  height: 47px;  
+  width: 38px;
+}
+
+
+.btn:hover {
+  opacity: .7;
+    transform: scale(1.05);
+}
+
+
+table {
+    text-indent:420px;
+     width: 80%;
+    text-align:center;
+      }
+
+
+h3{
+    text-align:center;
+
+}
+
+#list2
+{
+    text-align:left;
+ text-indent:650px;
+ list-style-type: none;
+ font-weight: bold;
+ 
+}
+
+.container {
+    border-style: none;
+    background: transparent;
+    text-align:center;
+    width: 70%;
+    align-items: center;
+justify-content: center;
+  }
+
+  .right{
+    text-align: right;
+  }
+
+
+  .center {
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+      }
+  
+
+

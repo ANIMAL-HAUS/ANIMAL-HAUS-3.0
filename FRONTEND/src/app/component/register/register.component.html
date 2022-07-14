@@ -1,0 +1,116 @@
+<BR><BR><div class="container">
+  <h1 style="text-align: center;">Create Contractor Account</h1><BR>
+  <form #recievedUser="ngForm">
+      <div class="row  justify-content-center">
+          <div class="col-8">
+    <label for="email"><span style="color:red">*</span> Email</label>
+    <input type="text" class="form-control" id="email" placeholder="add" [(ngModel)]="user.email" name="email">
+  </div>
+</div>
+
+    <div class="row  justify-content-center">
+      <div class="col-8">
+    <label for="userName"><span style="color:red">*</span> Username</label>
+    <input type="text" class="form-control" id="userName" placeholder="username" [(ngModel)]="user.userName" name="email">
+      </div>
+  </div>
+
+  <div class="row  justify-content-center">
+      <div class="col-8">
+    <label for="password"><span style="color:red">*</span> Password</label>
+    <input type="password" class="form-control" id="password" placeholder="********"  name="password">
+      </div></div>
+
+
+  <div class="row  justify-content-center">
+      <div class="col-8">
+    <label for="password1"><span style="color:red">*</span> Confirm Password</label>
+    <input type="password" class="form-control" id="password1" placeholder="********"  [(ngModel)]="user.password" name="cpassword">
+      </div>
+      </div> 
+
+      <div class="row  justify-content-center">
+          <div class="col-8">
+    <label for="fname">First Name</label>
+    <input type="text" class="form-control" id="fname" placeholder="First Name"   [(ngModel)]="user.firstName" name="fname">
+  </div>
+  </div>
+
+  <div class="row  justify-content-center">
+      <div class="col-8">
+    <label for="lname">Last Name</label>
+    <input type="text" class="form-control" id="lname" placeholder="Last Name" [(ngModel)]="user.lastName" name="lname">
+  </div>
+  </div>
+
+  <div class="row  justify-content-center">
+    <div class="col-8">
+  <label for="role"><span style="color:red">*</span> Role</label>
+  <input type="text" class="form-control" id="role" placeholder="Role" [(ngModel)]="user.role" name="lname">
+</div>
+</div>
+
+  <div class="row  justify-content-center">
+      <div class="col-8">
+    <label for="city"><span style="color:red">*</span> City</label>
+    <input type="text" class="form-control" id="city" placeholder="City"  [(ngModel)]="user.address" name="city">
+  </div>
+  </div>
+  
+  <div class="row justify-content-center">
+  <div class="col-8">
+      <label for="aboutMe">About Me</label>
+      <input type="text" class="form-control" rows="5" cols="150" id="aboutMe"  placeholder="aboutMe" [(ngModel)]="user.aboutMe" name="aboutMe">
+      </div>
+  </div>
+
+  <br>
+  <br>
+  <div class="row justify-content-center">
+    <div class="col-8">
+    <div [(ngModel)]="user.day"> 
+      <table><td><h4>Availability</h4></td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <td></td>
+       
+        <td><select title="select" name="timeofweek">
+          <option value="selectweek">Select Time of Week</option>
+          <option value="weekday">Monday-Friday</option><br>
+          <option value="weekends">Weekends</option><br>
+          <option value="anytime">Anytime</option><br>
+        </select></td>
+        <td>
+      <div class="p-2" [(ngModel)]="user.time">
+        <select title="select" name="timeofday">
+        <option value="selectday">Select Time of Day</option>
+        <option value="morning">Morning</option><br>
+        <option value="afternoon">Afternoon</option><br>
+        <option value="night">Night</option><br>
+        <option value="anytime">Anytime</option><br>
+      </select></div></td></table>
+    </div></div></div>
+    <BR>
+   
+      <div class="row justify-content-center">
+        <div class="col-8"><table>
+               <td><h4>What services do you offer?</h4></td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <td> 
+        <select title="select"
+        name="Pet Services" id = "serves" >
+          <option value="select">Select Service</option>
+          <option value="Petgrooming">Pet Grooming</option>
+          <option value="Dogwalking">Dog Walking</option>
+          <option value="Petsitting">Pet Sitting</option>
+          <option value="All">All</option>
+        </select></td>
+      </table>
+      </div></div>
+      <div class="row justify-content-center">
+        <div class="col-8">
+      <label for="terms"><br><br><label for = "password"><span style="color:red">*&nbsp;&nbsp;</span> <input type="checkbox" id="terms" name="terms" value="terms">
+        By creating this account, I acknowledge that I have read and agree to the Animal Haus <a href="/assets/files/Customer_Terms-and-Conditions.docx">Terms and Conditions.</a></label>
+      <BR><BR></label></div>
+         <div class="row justify-content-center">
+    <button type="button" class="btn btn-success" (click)="addContractor()">Create Account</button>
+  </div>
+  </div>
+</form></div>

@@ -1,0 +1,64 @@
+.navbar {
+  margin: 0;
+}
+
+.logo {
+  float: left;
+  text-decoration: none;
+  color: black;
+}
+
+li img {
+  height: 8em;
+  width: 8em;
+  clip-path: circle();
+  opacity: 1;
+}
+
+
+
+
+a:hover {
+  opacity: .7;
+    transform: scale(1.05);
+}
+
+.groom, .groom a {
+  background-color: transparent;
+  border-style: none;
+  color: black;
+  text-decoration: none;
+}
+
+.sit, .sit a{
+  background-color: transparent;
+  border-style: none;
+  color: black;
+  text-decoration: none;
+  
+}
+
+.walk, .walk a {
+  background-color: transparent;
+  border-style: none;
+  color: black;
+  text-decoration: none;
+}
+
+
+
+.login {
+  background: white;
+  border-color: rgb(0, 136, 255);
+  border-style: solid;
+}
+
+.register {
+  background: white;
+  border-color: blue;
+  border-style: solid;
+}
+
+.container {
+  display: inline-block;
+}

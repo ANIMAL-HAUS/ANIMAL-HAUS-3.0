@@ -1,0 +1,29 @@
+.btn {
+    border: none;
+    background: #652cb3;
+    border-color: white;
+    border-style: solid;
+    margin-right: 20px;
+    color: white
+   }
+   .card {
+    padding: 3.125em;
+    margin: 2.8125em;
+    text-align: center;
+    border-color: white;
+    left: 43.75em;
+    border-radius: 0px;
+    border-width: 0px;
+}
+
+.btn:hover {
+  opacity: .7;
+    transform: scale(1.05);
+}
+
+
+input {
+    height: 20px;
+    flex: 0 0 200px;
+    margin-left: 10px;
+  }

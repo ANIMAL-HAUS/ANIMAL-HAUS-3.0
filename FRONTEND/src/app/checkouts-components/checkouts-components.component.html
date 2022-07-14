@@ -1,0 +1,41 @@
+
+<div class="container-fluid"><BR><BR>
+  <h3> SUMMARY OF SERVICES</h3><BR><BR>
+    <div class="row justify-content-start">
+        <ng-container *ngFor="let cartt of carts"  >
+           
+   <table>
+  <tr>
+    <th><li>
+      Services .............................................................................. ${{cartt.price}} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <button type = "submit" class ="btn" (click) = remove(cartt)>
+        remove
+    </button>
+    </li></th>
+  </tr>
+
+  <tr>
+    <td><ul id="list2">
+      <li>Contractor: {{cartt.contractorFirstName}} {{cartt.contractorLastName}}</li>
+    <li>Booked for: {{cartt.service}}</li>
+ </ul></td>
+    <td></td>
+
+  </tr>
+</table>
+            <div class="modal " id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg" role="document" >
+                  <div class="modal-content text-center" style="background-color:#652CB3;">
+                    <div class="modal-header"  style="border-style:none;">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </ng-container>
+        <div class="right">
+          <strong><h2>Total = ${{total}}</h2></strong>
+        <button type="button" class="btn" id = "booknow" (click)="checkout()">Checkout</button></div>
+
